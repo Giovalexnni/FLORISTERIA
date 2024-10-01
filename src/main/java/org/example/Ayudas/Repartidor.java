@@ -109,7 +109,21 @@ public class Repartidor {
         this.conoceRutas = conoceRutas;
     }
 
-    public void imprimirDatos() {
-        System.out.println("Repartidor [ID=" + id + ", Nombre=" + nombre + ", Telefono=" + telefono + "]");
+    @Override
+    public String toString() {
+        return "Repartidor{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", telefono=" + telefono +
+                ", manejoFlores=" + manejoFlores +
+                ", fuerzaFisica=" + fuerzaFisica +
+                ", puntualidad=" + puntualidad +
+                ", responsabilidad=" + responsabilidad +
+                ", actitud=" + actitud +
+                ", conduccion=" + conduccion +
+                ", conoceRutas=" + conoceRutas +
+                '}';
     }
+
+
 }

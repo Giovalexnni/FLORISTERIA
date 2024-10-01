@@ -109,7 +109,19 @@ public class Proveedor {
         this.calificacion = calificacion;
     }
 
-    public void imprimirDatos() {
-        System.out.println("Proveedor [ID=" + id + ", Nombre=" + nombre + ", Calificación=" + calificacion + "]");
-    }
-}
+    @Override
+    public String toString() {
+        return "Proveedor{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono=" + telefono +
+                ", email='" + email + '\'' +
+                ", tipoProducto='" + tipoProducto + '\'' +
+                ", metodoPago='" + metodoPago + '\'' +
+                ", escofiable=" + escofiable +
+                ", paisOrigen='" + paisOrigen + '\'' +
+                ", calificacion=" + calificacion +
+                '}';
+    }}
+

@@ -111,7 +111,19 @@ public class Cliente {
         this.salario = salario;
     }
 
-    public void imprimirDatos() {
-        System.out.println("Cliente [ID=" + id + ", Nombre=" + nombre + ", Apellido=" + apellido + ", Edad=" + edad + "]");
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", edad=" + edad +
+                ", telefono=" + telefono +
+                ", correo='" + correo + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", ips='" + ips + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", salario=" + salario +
+                '}';
     }
 }

@@ -109,7 +109,20 @@ public class Flor {
         this.precio = precio;
     }
 
-    public void imprimirDatos() {
-        System.out.println("Flor [ID=" + id + ", Nombre=" + nombre + ", Color=" + color + ", Precio=" + precio + "]");
-    }
-}
+
+    @Override
+    public String toString() {
+        return "Flor{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", Petalos=" + Petalos +
+                ", hojas=" + hojas +
+                ", color='" + color + '\'' +
+                ", simetriaForma='" + simetriaForma + '\'' +
+                ", fragancia='" + fragancia + '\'' +
+                ", enfermedades='" + enfermedades + '\'' +
+                ", boton='" + boton + '\'' +
+                ", precio=" + precio +
+                '}';
+
+    }}
